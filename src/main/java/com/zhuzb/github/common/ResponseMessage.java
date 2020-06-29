@@ -24,7 +24,7 @@ public class ResponseMessage<T> {
      */
     private T data;
 
-    public ResponseMessage(int code,String message,T data){
+    public ResponseMessage(int code, String message, T data) {
         this.code = code;
         this.message = message;
         this.data = data;
@@ -32,22 +32,24 @@ public class ResponseMessage<T> {
 
     /**
      * 默认成功返回对象
+     *
      * @param data
      * @param <T>
      * @return
      */
-    public static <T> ResponseMessage<T> success(T data){
-        return new ResponseMessage<>(200,"success",data);
+    public static <T> ResponseMessage<T> success(T data) {
+        return new ResponseMessage<>(StatusCode.SUCCESS.getCode(), StatusCode.SUCCESS.getDes(), data);
     }
 
     /**
      * 默认失败返回对象
-     * @param message
+     *
+     * @param data
      * @param <T>
      * @return
      */
-    public static <T> ResponseMessage<T> failure(String message){
-        return new ResponseMessage<>(200,message,null);
+    public static <T> ResponseMessage<T> failure(T data) {
+        return new ResponseMessage<>(StatusCode.FAILURE.getCode(), StatusCode.FAILURE.getDes(), data);
     }
 
 }
