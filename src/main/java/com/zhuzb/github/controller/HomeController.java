@@ -1,11 +1,14 @@
 package com.zhuzb.github.controller;
 
 import com.zhuzb.github.common.ResponseMessage;
+import com.zhuzb.github.domain.Admin;
 import com.zhuzb.github.service.HomeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @Author: 朱政彬
@@ -21,5 +24,11 @@ public class HomeController {
     @GetMapping("/welcome")
     public ResponseMessage<String> welcome() {
         return ResponseMessage.success("欢迎访问");
+    }
+
+    @GetMapping("/queryAll")
+    public ResponseMessage<List<Admin>> queryAll() {
+        List<Admin> admins = homeService.queryAll();
+        return ResponseMessage.success(admins);
     }
 }

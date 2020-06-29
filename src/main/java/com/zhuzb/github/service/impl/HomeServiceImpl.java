@@ -1,7 +1,12 @@
 package com.zhuzb.github.service.impl;
 
+import com.zhuzb.github.domain.Admin;
+import com.zhuzb.github.mapper.HomeMapper;
 import com.zhuzb.github.service.HomeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @Author: 朱政彬
@@ -10,4 +15,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class HomeServiceImpl implements HomeService {
+    @Autowired
+    HomeMapper homeMapper;
+
+    @Override
+    public List<Admin> queryAll() {
+        return homeMapper.queryAll();
+    }
 }
