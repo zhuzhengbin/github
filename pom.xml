@@ -19,10 +19,16 @@
     </properties>
 
     <dependencies>
-        <!--web相关依赖-->
+        <!--web相关依赖，排除掉框架自带的logback-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <exclusions> <!-- 排除掉默认的logging，否则会出现依赖冲突 -->
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-logging</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!--lombok依赖-->
         <dependency>
@@ -64,6 +70,12 @@
             <artifactId>springfox-swagger2</artifactId>
             <version>2.9.2</version>
         </dependency>
+        <!--日志相关内容，引入log4j2依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

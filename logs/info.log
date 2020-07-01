@@ -1,0 +1,23 @@
+23:32:34.089 [main] INFO  com.zhuzb.github.GithubApplication - Starting GithubApplication on DESKTOP-APV9JPQ with PID 9716 (C:\app\IDEA\projects\github\target\classes started by zhuzhengbin in C:\app\IDEA\projects\github)
+23:32:34.108 [main] INFO  com.zhuzb.github.GithubApplication - No active profile set, falling back to default profiles: default
+23:32:37.019 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+23:32:37.020 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+23:32:37.022 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+23:32:37.273 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+23:32:38.264 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+23:32:38.688 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+23:32:38.724 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+23:32:38.786 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+23:32:39.017 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+23:32:39.049 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+23:32:39.069 [main] INFO  com.zhuzb.github.GithubApplication - Started GithubApplication in 5.745 seconds (JVM running for 10.039)
+23:32:39.273 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+23:32:39.348 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+23:32:44.031 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+23:32:49.022 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+23:32:54.027 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+23:32:59.025 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+23:33:04.027 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+23:33:09.024 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+23:33:09.570 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+23:33:09.585 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
