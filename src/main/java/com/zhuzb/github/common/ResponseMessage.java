@@ -38,7 +38,7 @@ public class ResponseMessage<T> {
      * @return
      */
     public static <T> ResponseMessage<T> success(T data) {
-        return new ResponseMessage<>(StatusCode.SUCCESS.getCode(), StatusCode.SUCCESS.getDes(), data);
+        return new ResponseMessage<>(StatusCode.SUCCESS.getCode(), StatusCode.SUCCESS.getMessage(), data);
     }
 
     /**
@@ -49,7 +49,7 @@ public class ResponseMessage<T> {
      * @return
      */
     public static <T> ResponseMessage<T> failure(T data) {
-        return new ResponseMessage<>(StatusCode.FAILURE.getCode(), StatusCode.FAILURE.getDes(), data);
+        return new ResponseMessage<>(StatusCode.FAILURE.getCode(), StatusCode.FAILURE.getMessage(), data);
     }
 
 }

@@ -1,6 +1,7 @@
 package com.zhuzb.github.schedule;
 
 import com.zhuzb.github.domain.Admin;
+import com.zhuzb.github.mapper.GlobalParamsMapper;
 import com.zhuzb.github.mapper.HomeMapper;
 import com.zhuzb.github.utils.DateUtil;
 import com.zhuzb.github.utils.StringUtil;
@@ -24,6 +25,8 @@ public class WriteAdminSchedule {
 
     @Autowired
     HomeMapper homeMapper;
+    @Autowired
+    GlobalParamsMapper paramsMapper;
 
 
     /**
@@ -31,10 +34,18 @@ public class WriteAdminSchedule {
      */
     @Scheduled(fixedRate = 1000 * 5)
     public void writeAdminInfo() {
-        Admin admin = new Admin();
-        admin.setUsername(DateUtil.currentTimeStr());
-        admin.setPassword(StringUtil.uuid().substring(0, 10));
-        homeMapper.save(admin);
-        log.info("写入数据库成功");
+        // 设置一个开关，只有在启用的时候才调用
+        String value = paramsMapper.getValue("writeAdminInfo", "switch");
+        if ("1".equals(value)) {
+            // 具体定时任务写入到service中
+            Admin admin = new Admin();
+            admin.setUsername(DateUtil.currentTimeStr());
+            admin.setPassword(StringUtil.uuid().substring(0, 10));
+            homeMapper.save(admin);
+            log.info("写入数据库成功");
+        } else {
+            System.out.println("定时任务未开启");
+        }
+
     }
 }
