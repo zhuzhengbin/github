@@ -3,6 +3,7 @@ package com.zhuzb.github.service.impl;
 import com.zhuzb.github.domain.Admin;
 import com.zhuzb.github.mapper.HomeMapper;
 import com.zhuzb.github.service.HomeService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,9 +15,9 @@ import java.util.List;
  * @Description:
  */
 @Service
+@RequiredArgsConstructor
 public class HomeServiceImpl implements HomeService {
-    @Autowired
-    HomeMapper homeMapper;
+    private final HomeMapper homeMapper;
 
     @Override
     public List<Admin> queryAll() {

@@ -5,6 +5,7 @@ import com.zhuzb.github.domain.Admin;
 import com.zhuzb.github.service.HomeService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,9 +21,9 @@ import java.util.List;
 @Api(tags = "首页控制器")
 @RestController
 @RequestMapping("/home")
+@RequiredArgsConstructor
 public class HomeController {
-    @Autowired
-    private HomeService homeService;
+    private final HomeService homeService;
 
     @ApiOperation("欢迎接口")
     @GetMapping("/welcome")

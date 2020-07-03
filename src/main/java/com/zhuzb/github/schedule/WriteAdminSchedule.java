@@ -5,6 +5,7 @@ import com.zhuzb.github.mapper.GlobalParamsMapper;
 import com.zhuzb.github.mapper.HomeMapper;
 import com.zhuzb.github.utils.DateUtil;
 import com.zhuzb.github.utils.StringUtil;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,14 +20,13 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @EnableScheduling
+@RequiredArgsConstructor
 public class WriteAdminSchedule {
 
     private static final Logger log = LoggerFactory.getLogger(WriteAdminSchedule.class);
 
-    @Autowired
-    HomeMapper homeMapper;
-    @Autowired
-    GlobalParamsMapper paramsMapper;
+    private final HomeMapper homeMapper;
+    private final GlobalParamsMapper paramsMapper;
 
 
     /**
