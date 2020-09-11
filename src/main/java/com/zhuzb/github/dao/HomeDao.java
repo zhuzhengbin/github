@@ -1,4 +1,4 @@
-package com.zhuzb.github.mapper;
+package com.zhuzb.github.dao;
 
 import com.zhuzb.github.domain.Admin;
 import org.springframework.stereotype.Repository;
@@ -11,7 +11,7 @@ import java.util.List;
  * @Description:
  */
 @Repository
-public interface HomeMapper {
+public interface HomeDao {
 
     void save(Admin admin);
 

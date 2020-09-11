@@ -1,4 +1,4 @@
-package com.zhuzb.github.mapper;
+package com.zhuzb.github.dao;
 
 import org.springframework.stereotype.Repository;
 
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
  * @Description: 全局参数接口
  */
 @Repository
-public interface GlobalParamsMapper {
+public interface GlobalParamsDao {
 
     /**
      * 根据键值获取参数

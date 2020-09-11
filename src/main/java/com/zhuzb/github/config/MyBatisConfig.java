@@ -9,6 +9,6 @@ import org.springframework.context.annotation.Configuration;
  * @Description: MyBatis配置类
  */
 @Configuration
-@MapperScan("com.zhuzb.github.mapper")  // 扫描mapper接口
+@MapperScan("com.zhuzb.github.dao")  // 扫描dao层接口的路径
 public class MyBatisConfig {
 }

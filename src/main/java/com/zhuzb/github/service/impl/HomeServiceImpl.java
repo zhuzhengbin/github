@@ -1,10 +1,9 @@
 package com.zhuzb.github.service.impl;
 
 import com.zhuzb.github.domain.Admin;
-import com.zhuzb.github.mapper.HomeMapper;
+import com.zhuzb.github.dao.HomeDao;
 import com.zhuzb.github.service.HomeService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,10 +16,10 @@ import java.util.List;
 @Service
 @RequiredArgsConstructor
 public class HomeServiceImpl implements HomeService {
-    private final HomeMapper homeMapper;
+    private final HomeDao homeDao;
 
     @Override
     public List<Admin> queryAll() {
-        return homeMapper.queryAll();
+        return homeDao.queryAll();
     }
 }

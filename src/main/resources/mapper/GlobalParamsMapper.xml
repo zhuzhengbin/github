@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zhuzb.github.mapper.GlobalParamsMapper">
+<mapper namespace="com.zhuzb.github.dao.GlobalParamsDao">
 
     <select id="getValue" resultType="string">
         select value from global_params where root_key = #{rootKey} and sub_key = #{subKey}

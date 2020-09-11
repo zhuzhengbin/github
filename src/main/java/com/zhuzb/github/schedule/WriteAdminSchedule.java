@@ -1,14 +1,13 @@
 package com.zhuzb.github.schedule;
 
 import com.zhuzb.github.domain.Admin;
-import com.zhuzb.github.mapper.GlobalParamsMapper;
-import com.zhuzb.github.mapper.HomeMapper;
+import com.zhuzb.github.dao.GlobalParamsDao;
+import com.zhuzb.github.dao.HomeDao;
 import com.zhuzb.github.utils.DateUtil;
 import com.zhuzb.github.utils.StringUtil;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -25,8 +24,8 @@ public class WriteAdminSchedule {
 
     private static final Logger log = LoggerFactory.getLogger(WriteAdminSchedule.class);
 
-    private final HomeMapper homeMapper;
-    private final GlobalParamsMapper paramsMapper;
+    private final HomeDao homeDao;
+    private final GlobalParamsDao paramsMapper;
 
 
     /**
@@ -41,7 +40,7 @@ public class WriteAdminSchedule {
             Admin admin = new Admin();
             admin.setUsername(DateUtil.currentTimeStr());
             admin.setPassword(StringUtil.uuid().substring(0, 10));
-            homeMapper.save(admin);
+            homeDao.save(admin);
             log.info("写入数据库成功");
         } else {
             System.out.println("定时任务未开启");

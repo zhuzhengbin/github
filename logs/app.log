@@ -1,110 +1,45 @@
-23:44:09.853 [main] INFO  com.zhuzb.github.GithubApplication - Starting GithubApplication on DESKTOP-APV9JPQ with PID 11940 (C:\app\IDEA\projects\github\target\classes started by zhuzhengbin in C:\app\IDEA\projects\github)
-23:44:09.872 [main] DEBUG com.zhuzb.github.GithubApplication - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
-23:44:09.874 [main] INFO  com.zhuzb.github.GithubApplication - No active profile set, falling back to default profiles: default
-23:44:13.090 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:44:13.092 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-23:44:13.093 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-23:44:13.414 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:44:14.486 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-23:44:14.942 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-23:44:14.979 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-23:44:15.043 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-23:44:20.993 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:44:21.044 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-23:44:21.063 [main] INFO  com.zhuzb.github.GithubApplication - Started GithubApplication in 12.046 seconds (JVM running for 18.93)
-23:44:21.339 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-23:44:21.358 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:44:21.408 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:44:21.457 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:44:40.955 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:44:40.955 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:44:40.956 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:44:46.337 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:44:46.344 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114446(Long), FD5157D80C(String)
-23:44:46.346 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:44:46.346 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:46.347 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:44:46.348 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:44:46.349 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:44:46.349 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:44:46.350 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114446(Long), DCFE2458F8(String)
-23:44:46.352 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:44:46.352 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:46.353 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:44:46.353 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:44:46.354 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:44:46.355 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:44:46.355 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114446(Long), 0F0992F5AA(String)
-23:44:46.357 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:44:46.357 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:46.358 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:44:46.358 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:44:46.359 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:44:46.360 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:44:46.361 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114446(Long), 702EAF47B8(String)
-23:44:46.363 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:44:46.363 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:46.363 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:44:46.364 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:44:46.365 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:44:46.365 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:44:46.366 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114446(Long), AC804C8733(String)
-23:44:46.368 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:44:46.368 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:46.369 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:44:46.369 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:44:46.370 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:44:46.371 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:44:46.371 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114446(Long), 8553F85E92(String)
-23:44:46.374 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:44:46.374 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:50.378 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:44:50.378 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:44:50.379 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:44:50.380 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:44:50.381 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114450(Long), 71C42D8486(String)
-23:44:50.383 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:44:50.383 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:55.323 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:44:55.324 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:44:55.325 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:44:55.326 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:44:55.327 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114455(Long), C2BB0F8367(String)
-23:44:55.329 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:44:55.329 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:45:00.327 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:45:00.327 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:45:00.328 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:45:00.329 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:45:00.329 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114500(Long), 01A21A243D(String)
-23:45:00.333 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:45:00.333 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:45:05.321 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:45:05.321 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:45:05.322 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:45:05.323 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:45:05.324 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114505(Long), 144F5705E0(String)
-23:45:05.328 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:45:05.328 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:45:10.318 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:45:10.318 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:45:10.319 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:45:10.320 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:45:10.320 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114510(Long), 88E5177B3B(String)
-23:45:10.324 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:45:10.324 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:45:15.327 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:45:15.328 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:45:15.329 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:45:15.329 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
-23:45:15.330 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - ==> Parameters: 200702114515(Long), C23E67BAFC(String)
-23:45:15.334 [scheduling-1] DEBUG com.zhuzb.github.mapper.HomeMapper.save - <==    Updates: 1
-23:45:15.334 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:45:20.320 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:45:20.320 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:45:20.321 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:45:25.319 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
-23:45:25.319 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
-23:45:25.320 [scheduling-1] DEBUG com.zhuzb.github.mapper.GlobalParamsMapper.getValue - <==      Total: 1
-23:45:30.012 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-23:45:30.032 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:48:57.542 [main] INFO  com.zhuzb.github.GithubApplication - Starting GithubApplication on DESKTOP-APV9JPQ with PID 9252 (C:\app\IDEA\projects\github\target\classes started by zhuzhengbin in C:\app\IDEA\projects\github)
+20:48:57.556 [main] DEBUG com.zhuzb.github.GithubApplication - Running with Spring Boot v2.2.8.RELEASE, Spring v5.2.7.RELEASE
+20:48:57.557 [main] INFO  com.zhuzb.github.GithubApplication - No active profile set, falling back to default profiles: default
+20:48:59.708 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:48:59.709 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+20:48:59.711 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+20:48:59.938 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:49:00.799 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+20:49:01.205 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+20:49:01.238 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+20:49:01.326 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+20:49:01.566 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:49:01.599 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:49:01.615 [main] INFO  com.zhuzb.github.GithubApplication - Started GithubApplication in 4.664 seconds (JVM running for 7.93)
+20:49:01.929 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:49:01.940 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
+20:49:01.972 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
+20:49:02.006 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - <==      Total: 1
+20:49:02.015 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
+20:49:02.022 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - ==> Parameters: 200911084902(Long), DF651F81A0(String)
+20:49:02.029 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - <==    Updates: 1
+20:49:02.029 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+20:49:06.578 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
+20:49:06.579 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
+20:49:06.580 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - <==      Total: 1
+20:49:06.581 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
+20:49:06.581 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - ==> Parameters: 200911084906(Long), EB28BBCDE9(String)
+20:49:06.585 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - <==    Updates: 1
+20:49:06.585 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+20:49:11.580 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
+20:49:11.580 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
+20:49:11.581 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - <==      Total: 1
+20:49:11.582 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
+20:49:11.582 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - ==> Parameters: 200911084911(Long), 8EFDC2B8E1(String)
+20:49:11.586 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - <==    Updates: 1
+20:49:11.586 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+20:49:16.569 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - ==>  Preparing: select value from global_params where root_key = ? and sub_key = ? 
+20:49:16.570 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - ==> Parameters: writeAdminInfo(String), switch(String)
+20:49:16.571 [scheduling-1] DEBUG com.zhuzb.github.dao.GlobalParamsDao.getValue - <==      Total: 1
+20:49:16.571 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - ==>  Preparing: insert into admin (username,password) values (?,?) 
+20:49:16.572 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - ==> Parameters: 200911084916(Long), D54D3B85AF(String)
+20:49:16.574 [scheduling-1] DEBUG com.zhuzb.github.dao.HomeDao.save - <==    Updates: 1
+20:49:16.574 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+20:49:18.770 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:49:18.777 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,125 +1,20 @@
-22:11:52.775 [main] INFO  com.zhuzb.github.GithubApplication - Starting GithubApplication on DESKTOP-APV9JPQ with PID 1544 (C:\app\IDEA\projects\github\target\classes started by zhuzhengbin in C:\app\IDEA\projects\github)
-22:11:52.826 [main] INFO  com.zhuzb.github.GithubApplication - No active profile set, falling back to default profiles: default
-22:11:56.434 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-22:11:56.435 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-22:11:56.436 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-22:11:56.953 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-22:11:58.461 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-22:11:58.997 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-22:11:59.062 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-22:11:59.156 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-22:11:59.497 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-22:11:59.635 [main] INFO  com.zhuzb.github.GithubApplication - Started GithubApplication in 7.803 seconds (JVM running for 20.254)
-22:11:59.639 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-22:12:00.061 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-22:12:00.173 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:04.505 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:09.504 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:14.502 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:19.512 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:24.502 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:29.507 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:34.513 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:43.186 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:43.191 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:48.254 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:53.185 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:12:58.183 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:13:03.180 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:13:06.733 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-22:13:06.780 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-22:29:24.141 [main] INFO  com.zhuzb.github.GithubApplication - Starting GithubApplication on DESKTOP-APV9JPQ with PID 2076 (C:\app\IDEA\projects\github\target\classes started by zhuzhengbin in C:\app\IDEA\projects\github)
-22:29:24.163 [main] INFO  com.zhuzb.github.GithubApplication - No active profile set, falling back to default profiles: default
-22:29:27.156 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-22:29:27.158 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-22:29:27.159 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-22:29:27.415 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-22:29:28.470 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-22:29:28.956 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-22:29:28.990 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-22:29:29.057 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-22:29:29.312 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-22:29:29.365 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-22:29:29.372 [main] INFO  com.zhuzb.github.GithubApplication - Started GithubApplication in 6.113 seconds (JVM running for 13.82)
-22:29:29.637 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-22:29:29.713 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:29:34.319 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:29:39.328 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:29:44.329 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:29:49.325 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:29:54.317 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:29:59.318 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:30:04.328 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:30:09.321 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:30:11.751 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-22:30:11.773 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-22:32:14.461 [main] INFO  com.zhuzb.github.GithubApplication - Starting GithubApplication on DESKTOP-APV9JPQ with PID 10604 (C:\app\IDEA\projects\github\target\classes started by zhuzhengbin in C:\app\IDEA\projects\github)
-22:32:14.486 [main] INFO  com.zhuzb.github.GithubApplication - No active profile set, falling back to default profiles: default
-22:32:17.625 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-22:32:17.627 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-22:32:17.628 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-22:32:17.893 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-22:32:19.102 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-22:32:19.734 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-22:32:19.779 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-22:32:19.852 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-22:32:20.137 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-22:32:20.190 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-22:32:20.206 [main] INFO  com.zhuzb.github.GithubApplication - Started GithubApplication in 6.613 seconds (JVM running for 15.382)
-22:32:20.412 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-22:32:20.509 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:32:25.161 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:32:30.149 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:32:35.148 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:32:40.151 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:32:45.139 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:32:50.153 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:32:55.143 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:33:00.144 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:33:05.141 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-22:33:05.418 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-22:33:05.439 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-23:42:12.137 [main] INFO  com.zhuzb.github.GithubApplication - Starting GithubApplication on DESKTOP-APV9JPQ with PID 10472 (C:\app\IDEA\projects\github\target\classes started by zhuzhengbin in C:\app\IDEA\projects\github)
-23:42:12.163 [main] INFO  com.zhuzb.github.GithubApplication - No active profile set, falling back to default profiles: default
-23:42:15.349 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:42:15.351 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-23:42:15.352 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-23:42:15.619 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:42:16.771 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-23:42:17.270 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-23:42:17.308 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-23:42:17.372 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-23:42:17.615 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:42:17.674 [main] INFO  com.zhuzb.github.GithubApplication - Started GithubApplication in 6.445 seconds (JVM running for 15.104)
-23:42:17.680 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-23:42:17.924 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-23:43:11.167 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-23:43:11.196 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-23:44:09.853 [main] INFO  com.zhuzb.github.GithubApplication - Starting GithubApplication on DESKTOP-APV9JPQ with PID 11940 (C:\app\IDEA\projects\github\target\classes started by zhuzhengbin in C:\app\IDEA\projects\github)
-23:44:09.874 [main] INFO  com.zhuzb.github.GithubApplication - No active profile set, falling back to default profiles: default
-23:44:13.090 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-23:44:13.092 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-23:44:13.093 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
-23:44:13.414 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-23:44:14.486 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-23:44:14.942 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-23:44:14.979 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-23:44:15.043 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-23:44:20.993 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-23:44:21.044 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-23:44:21.063 [main] INFO  com.zhuzb.github.GithubApplication - Started GithubApplication in 12.046 seconds (JVM running for 18.93)
-23:44:21.339 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-23:44:46.346 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:46.352 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:46.357 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:46.363 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:46.368 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:46.374 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:50.383 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:44:55.329 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:45:00.333 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:45:05.328 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:45:10.324 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:45:15.334 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
-23:45:30.012 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-23:45:30.032 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+20:48:57.542 [main] INFO  com.zhuzb.github.GithubApplication - Starting GithubApplication on DESKTOP-APV9JPQ with PID 9252 (C:\app\IDEA\projects\github\target\classes started by zhuzhengbin in C:\app\IDEA\projects\github)
+20:48:57.557 [main] INFO  com.zhuzb.github.GithubApplication - No active profile set, falling back to default profiles: default
+20:48:59.708 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:48:59.709 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+20:48:59.711 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.36]
+20:48:59.938 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:49:00.799 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+20:49:01.205 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+20:49:01.238 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+20:49:01.326 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+20:49:01.566 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:49:01.599 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:49:01.615 [main] INFO  com.zhuzb.github.GithubApplication - Started GithubApplication in 4.664 seconds (JVM running for 7.93)
+20:49:01.929 [scheduling-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:49:02.029 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+20:49:06.585 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+20:49:11.586 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+20:49:16.574 [scheduling-1] INFO  com.zhuzb.github.schedule.WriteAdminSchedule - 写入数据库成功
+20:49:18.770 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+20:49:18.777 [SpringContextShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
